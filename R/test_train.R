@@ -8,9 +8,11 @@ train = function(formula, data, prop = 0.7, training_data = FALSE) {
   model = glm(formula, data = training, family = binomial(link = "logit"))
   if(training_data == TRUE) {
     predicted = tibble(phat = predict(model, training, type = "response"),
+                       #predicted = predict(model, training),
                        response = training[[as.character((formula)[[2]])]])
   } else {
     predicted = tibble(phat = predict(model, testing, type = "response"),
+                       #predicted = predict(model, testing),
                        response = testing[[as.character((formula)[[2]])]])
   }
   return(predicted)
