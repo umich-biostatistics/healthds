@@ -19,6 +19,15 @@ simulate_t(rep, mean1, mean2, n1, n2, sd)
 
 \item{sd}{standard deviation for both populations}
 }
+\value{
+tibble with t statistics from each sample where each row is a
+unique sample
+}
 \description{
 Simulate the two-sample t-test with equal variances
+}
+\examples{
+ts = simulate_t(rep = 1000, mean1 = 7, mean2 = 4, n1 = 25, n2 = 25, sd = 1)
+head(ts)
+
 }

@@ -4,8 +4,36 @@
 \alias{train}
 \title{Train and then test a logistic regression model}
 \usage{
-train(formula, data, prop = 0.7)
+train(formula, data, prop = 0.7, training_data = FALSE)
+}
+\arguments{
+\item{formula}{regression model formula}
+
+\item{data}{data frame with variables for the model formula}
+
+\item{prop}{proportion of data for training sample (defaults to 0.7)}
+
+\item{training_data}{predictions from the training data (training_data = TRUE)
+or to the testing data (training_data = TRUE)}
+}
+\value{
+data frame with phat (predictions) and response (observed values)
 }
 \description{
 Train and then test a logistic regression model
+}
+\examples{
+pred = train(hypertension ~ bmi_group + age_st + I(age_st^2) + parent_history_HTN +
+             salt_group + smoking + chewing + activity,
+             BPUrban1000, training_data = FALSE)
+
+#library(ggplot2)
+
+ggplot(pred) + aes(x = 1:nrow(pred), y = phat, color = factor(response)) +
+  geom_point() +
+  theme_bw() +
+  xlab("Obervation number") +
+  ylab("Predicted probability") +
+  labs(color = "Hypertension")
+
 }

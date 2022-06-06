@@ -7,7 +7,15 @@
 #' @param n2 sample size drawn from the second population
 #' @param sd standard deviation for both populations
 #'
+#' @return tibble with t statistics from each sample where each row is a
+#' unique sample
+#'
+#' @examples
+#' ts = simulate_t(rep = 1000, mean1 = 7, mean2 = 4, n1 = 25, n2 = 25, sd = 1)
+#' head(ts)
+#'
 #' @importFrom tibble tibble
+#' @export
 simulate_t = function(rep, mean1, mean2, n1, n2, sd) {
   tibble(t = replicate(rep, {
     t_sim(mean1, mean2, n1, n2, sd)
