@@ -1,2 +1,4 @@
 ^healthds\.Rproj$
 ^\.Rproj\.user$
+\.lintr
+\.vscode
