@@ -50,7 +50,7 @@
 #'   \item{smoking}{Does he/she smoke? T/F}
 #' }
 #'
-"BP500"
+"BPUrban500"
 
 #' Hypertension, blood pressure and their risk factors in 1000 participants
 #'

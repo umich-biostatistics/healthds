@@ -4,10 +4,15 @@ Version: 0.0.0.9000
 Authors@R: 
     person(given = "Philip",
            family = "Boonstra",
-           role = c("aut", "cre"),
+           middle = "S",
+           role = c("aut"),
            email = "philb@umich.edu",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           comment = c(ORCID = "0000-0001-8545-9133")),
+    person(given = "Mike",
+           family = "Kleinsasser",
+           role = c("aut", "cre"),
+           email = "mkleinsa@umich.edu")
+Description: This R package was developed to support and accompany the Coursera Specialization "Data Science for Health Research"
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
