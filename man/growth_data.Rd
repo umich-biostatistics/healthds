@@ -19,6 +19,6 @@ growth_data
 \description{
 A made-up dataset containing an id, age, weight, and height of two newborns
 followed monthly for the first three months after birth. These data are
-used during the videos to demonstrate data wrangling ideas.
+used during the Course 1 videos to demonstrate data wrangling ideas.
 }
 \keyword{datasets}
