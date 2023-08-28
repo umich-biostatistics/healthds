@@ -23,6 +23,7 @@ data frame with phat (predictions) and response (observed values)
 Train and then test a logistic regression model
 }
 \examples{
+BPUrban1000$age_st = (BPUrban1000$age - mean(BPUrban1000$age)) / sd(BPUrban1000$age)
 pred = train(hypertension ~ bmi_group + age_st + I(age_st^2) + parent_history_HTN +
              salt_group + smoking + chewing + activity,
              BPUrban1000, training_data = FALSE)

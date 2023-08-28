@@ -1,7 +1,7 @@
 Package: healthds
 Title: R Package to Accompany Introductory Data Science for Health Research
 Version: 0.0.0.9000
-Authors@R: 
+Authors@R: c(
     person(given = "Philip",
            family = "Boonstra",
            middle = "S",
@@ -11,7 +11,7 @@ Authors@R:
     person(given = "Mike",
            family = "Kleinsasser",
            role = c("aut", "cre"),
-           email = "mkleinsa@umich.edu")
+           email = "mkleinsa@umich.edu"))
 Description: This R package was developed to support and accompany the Coursera Specialization "Data Science for Health Research"
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
